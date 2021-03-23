@@ -293,7 +293,7 @@ function App() {
         </div>
         )}
       </main>
-      <footer>© Brandon Ramirez 2021</footer>
+      <footer className="p-2">© Brandon Ramirez 2021</footer>
     </div>
   );
 
