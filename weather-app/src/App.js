@@ -30,6 +30,9 @@ function App() {
             .then(res => res.json())
             .then(result => {
               setForecast(result);
+              if(result.cod === "404" || result.cod === "400") {
+                alert("Please enter a valid city and country (or zip code).");
+              }
             });
 
           if(result.cod === "404" || result.cod === "400") {
