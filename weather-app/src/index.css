@@ -2,14 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Nuntio';
+    src: url(./fonts/Nunito-Regular.ttf) 
+}
+
+html {
+    height: 100%;
+    font-family: 'Nunito';
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
 body {
-    background: rgb(57,57,118);
-    background: linear-gradient(rgba(23,34,86,1) 0%, rgba(57,57,118,1) 45%,rgba(142,99,157,1) 100%);
-    /* height: 100vh; */
+    width: 100%;
+    background: rgb(124,178,219);
+}
+
+input {
+    appearance: none; 
+    background: none;
+    outline: none;
+
+    color: white;
+    border-bottom: 2px solid white;
+    width:11rem;
+}
+
+input::placeholder {
+    color: rgb(230, 230, 230);
+}
+
+.web-title {
+    letter-spacing: 2px;
 }
 
 .cards {
     text-align: center;
+}
+
+.cards i {
+    font-size: large;
 }
 
 .cards .content {
@@ -19,11 +52,14 @@ body {
     background-color: rgba(255,255,255,0.2);
     border-radius: 8px;
 
-    padding: 15px 25px;
+    padding: 12px 25px;
 
     color: whitesmoke;
     font-size: 16px;
 
     text-align: center;
-    /* box-shadow: 3px 6px rgba(0,0,0,0,2); */
+}
+
+.forecast-min {
+    color: rgb(230, 230, 230);
 }
