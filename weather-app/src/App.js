@@ -25,7 +25,7 @@ function App() {
         .then(result => {
           setWeather(result);
           setQuery(`${result}`);
-
+         
           if(result.cod === "404" || result.cod === "400") {
             alert("Please enter a valid city and country (or zip code).");
           }
@@ -294,7 +294,7 @@ function App() {
         </div>
         )}
       </main>
-      <footer className="p-2">© Brandon Ramirez 2021</footer>
+      <footer className="p-3">© Brandon Ramirez 2021</footer>
     </div>
   );
 
